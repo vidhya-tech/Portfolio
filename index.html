@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
      <div id="container">
@@ -16,24 +18,56 @@
             <div class="nav-menu" id="mynameMenu">
               <ul class="nav_menu_list">
                    <li class="nav_list">
-                    <a href="" class="nav-link-active">Home</a>
+                    <a href="#home" class="nav-link-active">Home</a>
                    <div class="circle"></div>
                    </li>
                    <li class="nav_list">
-                    <a href="" class="nav-link-active"></a>
+                    <a href="#about" class="nav-link">About</a>
                    <div class="circle"></div>
                    </li>
                    <li class="nav_list">
-                    <a href="" class="nav-link-active"></a>
+                    <a href="#projects" class="nav-link">Project</a>
                    <div class="circle"></div>
                    </li>
                    <li class="nav_list">
-                    <a href="" class="nav-link-active"></a>
+                    <a href="#contact" class="nav-link-">Contact</a>
                    <div class="circle"></div>
                    </li>
               </ul>
             </div>
+            <!-- Dark Mode -->
+            <div class="mode">
+                <div class="moon-sun" id="toogle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="fas fa-bars" onclick="mymenufunction()"></i>
+
+            </div>
         </nav>
+
+        <!-- main -->
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello I,m</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typeText"></span>
+                    </div>
+                    <div class="text-info">
+                        <p>My name is Vidhya! I,m a Web Developer with 3+ years of experience</p>
+                    </div>
+                    <div class="text-btn">
+                        <button class="btn hire-btn">Hire Me</button>
+                        <button class="btn">Download CV <i class="fas fa-file white-icon"></i></i></button>
+                    </div>
+                </div>
+            </section>
+        </main>
      </div>
 </body>
 </html>
