@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
-<body>
-     <div id="header">
-      <div class="container">
-        <nav>
-            <h1>VIDHYA.</h1>
-            <ul>
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">About</a> </li>
-                <li><a href="#">Services</a> </li>
-                <li><a href="#">Portfolio</a> </li>
-                <li><a href="#">Contact</a> </li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Front End Developer</p>
-            <h1>Hi,I'm <span>Vidhya</span></h1>
 
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">VIDHYA.</h1>
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">Services</a> </li>
+                    <li><a href="#">Portfolio</a> </li>
+                    <li><a href="#">Contact</a> </li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Front End Developer</p>
+                    <h1>Hi, I'm <span>Vidhya</span></h1>
+                </div>
+                <img src="images/background.png" alt="Image" class="header-image">
+            </div>
         </div>
-        <!-- About -->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/IMG_20231128_071118.jpg">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
+        
+            <!-- About -->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/image1.jpg">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p class="desc">As an entry-level front-end developer, I possess foundational skills in HTML,
+                             CSS, and JavaScript, coupled with a keen interest in 
+                             mastering React.js. Eager to contribute to dynamic projects, I am committed to continuous learning and dedicated to creating engaging user interfaces.</p>
+                             
+                             <div class="tab-title">
+                                <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                
+                             </div>
+                             <div class="tab-contents active-tab" id="skills" >
+                                <ul>
+                                    <li><span>Front-end</span><br>Desiging Web/App interfaces</li>
+                                    <li><span>Web  Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Building Andriod/ios apps</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2023</span><br>Front-End Developer Training at Nschool Academy</li>
+                                    <li><span>2020-2023</span><br>Bachelor Of Computer Science From Coimbatore </li>
+                                    
+                                </ul>
+                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-      </div>
+        
     </div>
-
-       
+    <script>
+        var tablinks =document.getElementById('tab-links')
+        var tabcontents =document.getElementById('tab-contents')
+        function opentab(tabename){
+            for(tablink of tablinks){
+                tablink.classList('active-link ')
+            }
+            for(tabcontent of tabcontents){
+                tablink.classList('active-tab')
+            }
+        }
+    </script>
+    </body>
+    </html>
