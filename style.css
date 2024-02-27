@@ -23,11 +23,33 @@ body{
 .header-image {
     position: absolute;
     top: 100px;
-    right: 0;
-    margin-right: 10%;
-    width: 500px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
+    right: -800px; /* Start off-screen to the right */
+    margin-right: 5%;
+    width: 800px;
+    height: 500px;
+    opacity: 0; /* Start invisible */
+    animation: slideIn 1s ease-out forwards, fadeIn 1s ease-out forwards;
+    border-radius: 50%
 }
+
+@keyframes slideIn {
+    0% {
+        right: -800px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .container{
     padding: 10px 10%;

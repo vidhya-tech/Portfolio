@@ -29,7 +29,7 @@
                     <p>Front End Developer</p>
                     <h1>Hi, I'm <span>Vidhya</span></h1>
                 </div>
-                <img src="images/background.png" alt="Image" class="header-image">
+                <img src="images/background1.jpg" alt="Image" class="header-image">
             </div>
         </div>
         
@@ -72,16 +72,23 @@
         
     </div>
     <script>
-        var tablinks =document.getElementById('tab-links')
-        var tabcontents =document.getElementById('tab-contents')
-        function opentab(tabename){
-            for(tablink of tablinks){
-                tablink.classList('active-link ')
+        function opentab(tabename) {
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('tab-contents');
+            
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove('active-link');
             }
-            for(tabcontent of tabcontents){
-                tablink.classList('active-tab')
+            
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove('active-tab');
             }
+            
+            document.getElementById(tabename).classList.add('active-tab');
+            event.currentTarget.classList.add('active-link');
         }
+    </script>
+    
     </script>
     </body>
     </html>
