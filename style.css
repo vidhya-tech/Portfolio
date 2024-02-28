@@ -24,8 +24,8 @@ body{
     position: absolute;
     top: 100px;
     right: -800px; /* Start off-screen to the right */
-    margin-right: 5%;
-    width: 800px;
+    margin-right: 20%;
+    width: 300px;
     height: 500px;
     opacity: 0; /* Start invisible */
     animation: slideIn 1s ease-out forwards, fadeIn 1s ease-out forwards;
@@ -283,4 +283,126 @@ nav ul li a:hover::after{
 .work:hover .layer{
     height: 100%;
 
+}
+
+/* contact */
+.contact{
+    margin-top: 100px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top: 30px;
+
+}
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icon a:hover{
+    color: #ff004f;
+    transform: translate(-5px);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+}
+.copyright i{
+    color: #ff004f;
+}
+
+/* Css for Small Screen */
+@media screen and (max-width: 600px) {
+    #header {
+        height: 200px; /* Adjusted height for screens <= 600px */
+    }
+
+    .header-image {
+        top: 30px; /* Adjusted top position for screens <= 600px */
+        right: -300px; /* Adjusted starting position for screens <= 600px */
+        width: 300px; /* Adjusted width for screens <= 600px */
+        height: 200px; /* Adjusted height for screens <= 600px */
+    }
+
+    .logo {
+        font-size: 30px; /* Adjusted font size for screens <= 600px */
+    }
+
+    nav ul li {
+        margin: 10px 5px; /* Adjusted margin for screens <= 600px */
+    }
+
+    nav ul li a {
+        font-size: 12px; /* Adjusted font size for screens <= 600px */
+    }
+
+    .header-text {
+        margin: 10% 20px; /* Adjusted margin for screens <= 600px */
+        font-size: 16px; /* Adjusted font size for screens <= 600px */
+    }
+
+    .header-text h1 {
+        font-size: 30px; /* Adjusted font size for screens <= 600px */
+        margin-top: 5px; /* Adjusted margin for screens <= 600px */
+    }
+
+    .header-text p {
+        font-size: large; /* Adjusted font size for screens <= 600px */
+    }
 }
